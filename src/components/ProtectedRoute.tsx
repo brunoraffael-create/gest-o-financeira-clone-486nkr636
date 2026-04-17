@@ -1,9 +1,8 @@
 import { useAuth } from '@/hooks/use-auth'
 import { Navigate, Outlet } from 'react-router-dom'
-import AccessDenied from '@/pages/AccessDenied'
 
 export const ProtectedRoute = () => {
-  const { session, loading, role } = useAuth()
+  const { session, loading } = useAuth()
 
   if (loading) {
     return (
@@ -15,10 +14,6 @@ export const ProtectedRoute = () => {
 
   if (!session) {
     return <Navigate to="/login" replace />
-  }
-
-  if (role === 'visitante') {
-    return <AccessDenied />
   }
 
   return <Outlet />
