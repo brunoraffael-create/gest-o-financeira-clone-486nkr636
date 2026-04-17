@@ -11,7 +11,6 @@ import { TransactionsTable } from '@/components/transactions/TransactionsTable'
 import useTransactionStore from '@/stores/useTransactionStore'
 import { Transacao } from '@/lib/types'
 import { useAuth } from '@/hooks/use-auth'
-import AccessDenied from '@/pages/AccessDenied'
 
 const Payments = () => {
   const { transactions, fetchTransactions, loading, initialized } =
@@ -46,12 +45,6 @@ const Payments = () => {
   const handleEdit = (transaction: Transacao) => {
     setEditingTransaction(transaction)
     setIsFormOpen(true)
-  }
-
-  // Double check for visitante logic
-  // "If the role is visitante, it must display the message: 'Você não tem acesso. Solicite para um administrador.'"
-  if (role === 'visitante') {
-    return <AccessDenied />
   }
 
   // Show loading state if loading is true OR if we haven't initialized data yet

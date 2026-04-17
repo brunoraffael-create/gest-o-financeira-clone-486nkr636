@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/hooks/use-auth'
-import AccessDenied from '@/pages/AccessDenied'
 import { userService } from '@/services/userService'
 import { UserProfile, Role } from '@/lib/types'
 import {
@@ -31,10 +30,8 @@ export default function Users() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        if (role === 'admin') {
-          const data = await userService.getAllUsers()
-          setUsers(data)
-        }
+        const data = await userService.getAllUsers()
+        setUsers(data)
       } catch (error) {
         console.error('Error fetching users:', error)
         toast.error('Erro ao carregar usuários')
@@ -57,10 +54,6 @@ export default function Users() {
       console.error('Error updating role:', error)
       toast.error('Erro ao atualizar função')
     }
-  }
-
-  if (role !== 'admin') {
-    return <AccessDenied />
   }
 
   return (

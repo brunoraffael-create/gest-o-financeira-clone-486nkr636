@@ -11,7 +11,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.5"
+    PostgrestVersion: '14.5'
   }
   public: {
     Tables: {
@@ -51,18 +51,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "afastamentos_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'afastamentos_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "afastamentos_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'afastamentos_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -114,25 +114,25 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "avaliacoes_avaliador_id_fkey"
-            columns: ["avaliador_id"]
+            foreignKeyName: 'avaliacoes_avaliador_id_fkey'
+            columns: ['avaliador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "avaliacoes_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'avaliacoes_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "avaliacoes_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'avaliacoes_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -361,25 +361,25 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "colaboradores_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'colaboradores_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "colaboradores_supervisor_id_fkey"
-            columns: ["supervisor_id"]
+            foreignKeyName: 'colaboradores_supervisor_id_fkey'
+            columns: ['supervisor_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "colaboradores_tipo_jornada_id_fkey"
-            columns: ["tipo_jornada_id"]
+            foreignKeyName: 'colaboradores_tipo_jornada_id_fkey'
+            columns: ['tipo_jornada_id']
             isOneToOne: false
-            referencedRelation: "tipos_jornada"
-            referencedColumns: ["id"]
+            referencedRelation: 'tipos_jornada'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -416,18 +416,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "escalas_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'escalas_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "escalas_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'escalas_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -476,18 +476,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "escalas_semanais_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'escalas_semanais_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "escalas_semanais_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'escalas_semanais_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -521,18 +521,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "ferias_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'ferias_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "ferias_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'ferias_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -557,11 +557,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "funcoes_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'funcoes_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -616,18 +616,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "ponto_colaborador_id_fkey"
-            columns: ["colaborador_id"]
+            foreignKeyName: 'ponto_colaborador_id_fkey'
+            columns: ['colaborador_id']
             isOneToOne: false
-            referencedRelation: "colaboradores"
-            referencedColumns: ["id"]
+            referencedRelation: 'colaboradores'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "ponto_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'ponto_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -688,18 +688,18 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "recrutamento_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'recrutamento_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
           {
-            foreignKeyName: "recrutamento_vaga_id_fkey"
-            columns: ["vaga_id"]
+            foreignKeyName: 'recrutamento_vaga_id_fkey'
+            columns: ['vaga_id']
             isOneToOne: false
-            referencedRelation: "vagas"
-            referencedColumns: ["id"]
+            referencedRelation: 'vagas'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -724,11 +724,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "setores_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'setores_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -765,11 +765,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "tipos_jornada_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'tipos_jornada_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -857,11 +857,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "turnos_padrao_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'turnos_padrao_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -892,11 +892,11 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "vagas_organization_id_fkey"
-            columns: ["organization_id"]
+            foreignKeyName: 'vagas_organization_id_fkey'
+            columns: ['organization_id']
             isOneToOne: false
-            referencedRelation: "organizations"
-            referencedColumns: ["id"]
+            referencedRelation: 'organizations'
+            referencedColumns: ['id']
           },
         ]
       }
@@ -920,33 +920,33 @@ export type Database = {
   }
 }
 
-type DatabaseWithoutInternals = Omit<Database, "__InternalSupabase">
+type DatabaseWithoutInternals = Omit<Database, '__InternalSupabase'>
 
-type DefaultSchema = DatabaseWithoutInternals[Extract<keyof Database, "public">]
+type DefaultSchema = DatabaseWithoutInternals[Extract<keyof Database, 'public'>]
 
 export type Tables<
   DefaultSchemaTableNameOrOptions extends
-    | keyof (DefaultSchema["Tables"] & DefaultSchema["Views"])
+    | keyof (DefaultSchema['Tables'] & DefaultSchema['Views'])
     | { schema: keyof DatabaseWithoutInternals },
   TableName extends DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
-    ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
-        DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])
+    ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables'] &
+        DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Views'])
     : never = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
-  ? (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
-      DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])[TableName] extends {
+  ? (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables'] &
+      DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Views'])[TableName] extends {
       Row: infer R
     }
     ? R
     : never
-  : DefaultSchemaTableNameOrOptions extends keyof (DefaultSchema["Tables"] &
-        DefaultSchema["Views"])
-    ? (DefaultSchema["Tables"] &
-        DefaultSchema["Views"])[DefaultSchemaTableNameOrOptions] extends {
+  : DefaultSchemaTableNameOrOptions extends keyof (DefaultSchema['Tables'] &
+        DefaultSchema['Views'])
+    ? (DefaultSchema['Tables'] &
+        DefaultSchema['Views'])[DefaultSchemaTableNameOrOptions] extends {
         Row: infer R
       }
       ? R
@@ -955,23 +955,23 @@ export type Tables<
 
 export type TablesInsert<
   DefaultSchemaTableNameOrOptions extends
-    | keyof DefaultSchema["Tables"]
+    | keyof DefaultSchema['Tables']
     | { schema: keyof DatabaseWithoutInternals },
   TableName extends DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
-    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables']
     : never = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
-  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables'][TableName] extends {
       Insert: infer I
     }
     ? I
     : never
-  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
-    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema['Tables']
+    ? DefaultSchema['Tables'][DefaultSchemaTableNameOrOptions] extends {
         Insert: infer I
       }
       ? I
@@ -980,23 +980,23 @@ export type TablesInsert<
 
 export type TablesUpdate<
   DefaultSchemaTableNameOrOptions extends
-    | keyof DefaultSchema["Tables"]
+    | keyof DefaultSchema['Tables']
     | { schema: keyof DatabaseWithoutInternals },
   TableName extends DefaultSchemaTableNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
-    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables']
     : never = never,
 > = DefaultSchemaTableNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
-  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions['schema']]['Tables'][TableName] extends {
       Update: infer U
     }
     ? U
     : never
-  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
-    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema['Tables']
+    ? DefaultSchema['Tables'][DefaultSchemaTableNameOrOptions] extends {
         Update: infer U
       }
       ? U
@@ -1005,36 +1005,36 @@ export type TablesUpdate<
 
 export type Enums<
   DefaultSchemaEnumNameOrOptions extends
-    | keyof DefaultSchema["Enums"]
+    | keyof DefaultSchema['Enums']
     | { schema: keyof DatabaseWithoutInternals },
   EnumName extends DefaultSchemaEnumNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
-    ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"]
+    ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions['schema']]['Enums']
     : never = never,
 > = DefaultSchemaEnumNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
-  ? DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"][EnumName]
-  : DefaultSchemaEnumNameOrOptions extends keyof DefaultSchema["Enums"]
-    ? DefaultSchema["Enums"][DefaultSchemaEnumNameOrOptions]
+  ? DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions['schema']]['Enums'][EnumName]
+  : DefaultSchemaEnumNameOrOptions extends keyof DefaultSchema['Enums']
+    ? DefaultSchema['Enums'][DefaultSchemaEnumNameOrOptions]
     : never
 
 export type CompositeTypes<
   PublicCompositeTypeNameOrOptions extends
-    | keyof DefaultSchema["CompositeTypes"]
+    | keyof DefaultSchema['CompositeTypes']
     | { schema: keyof DatabaseWithoutInternals },
   CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
     schema: keyof DatabaseWithoutInternals
   }
-    ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes']
     : never = never,
 > = PublicCompositeTypeNameOrOptions extends {
   schema: keyof DatabaseWithoutInternals
 }
-  ? DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
-  : PublicCompositeTypeNameOrOptions extends keyof DefaultSchema["CompositeTypes"]
-    ? DefaultSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
+  ? DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes'][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof DefaultSchema['CompositeTypes']
+    ? DefaultSchema['CompositeTypes'][PublicCompositeTypeNameOrOptions]
     : never
 
 export const Constants = {
@@ -1042,7 +1042,6 @@ export const Constants = {
     Enums: {},
   },
 } as const
-
 
 // ====== DATABASE EXTENDED CONTEXT (auto-generated) ======
 // This section contains actual PostgreSQL column types, constraints, RLS policies,
@@ -1457,14 +1456,14 @@ export const Constants = {
 //           v_data := NEW.data;
 //           v_org_id := NEW.organization_id;
 //       END IF;
-//   
+//
 //       -- Get start of the week (Monday)
 //       v_data_inicio_semana := date_trunc('week', v_data)::date;
-//   
+//
 //       -- Calculate horas_previstas from escalas
 //       SELECT COALESCE(SUM(
-//           CASE 
-//               WHEN tp.id IS NOT NULL AND tp.conta_hora = true THEN tp.carga_horaria 
+//           CASE
+//               WHEN tp.id IS NOT NULL AND tp.conta_hora = true THEN tp.carga_horaria
 //               WHEN tp.id IS NULL AND UPPER(e.tipo) NOT IN ('FOLGA', 'FERIAS', 'FÉRIAS', 'ATESTADO', 'FERIADO', 'JUSTIFICADA', '0') THEN 8 -- fallback
 //               ELSE 0
 //           END
@@ -1475,14 +1474,14 @@ export const Constants = {
 //       WHERE e.colaborador_id = v_colaborador_id
 //         AND e.data >= v_data_inicio_semana
 //         AND e.data < v_data_inicio_semana + INTERVAL '7 days';
-//   
+//
 //       -- Calculate horas_realizadas from ponto
 //       SELECT COALESCE(SUM(
 //           EXTRACT(EPOCH FROM (
-//               CASE 
-//                   WHEN hora_saida IS NOT NULL AND hora_entrada IS NOT NULL 
-//                   THEN hora_saida::time - hora_entrada::time 
-//                   ELSE '00:00'::time - '00:00'::time 
+//               CASE
+//                   WHEN hora_saida IS NOT NULL AND hora_entrada IS NOT NULL
+//                   THEN hora_saida::time - hora_entrada::time
+//                   ELSE '00:00'::time - '00:00'::time
 //               END
 //           ))/3600
 //       ), 0)
@@ -1491,42 +1490,42 @@ export const Constants = {
 //       WHERE p.colaborador_id = v_colaborador_id
 //         AND p.data >= v_data_inicio_semana
 //         AND p.data < v_data_inicio_semana + INTERVAL '7 days';
-//   
+//
 //       v_saldo := v_horas_realizadas - v_horas_previstas;
-//   
+//
 //       -- Upsert into escalas_semanais
 //       INSERT INTO public.escalas_semanais (
-//           colaborador_id, 
-//           data_inicio_semana, 
-//           organization_id, 
-//           horas_semana, 
-//           horas_previstas, 
-//           horas_realizadas, 
+//           colaborador_id,
+//           data_inicio_semana,
+//           organization_id,
+//           horas_semana,
+//           horas_previstas,
+//           horas_realizadas,
 //           saldo_horas
 //       )
 //       VALUES (
-//           v_colaborador_id, 
-//           v_data_inicio_semana, 
-//           v_org_id, 
-//           v_horas_previstas, 
-//           v_horas_previstas, 
-//           v_horas_realizadas, 
+//           v_colaborador_id,
+//           v_data_inicio_semana,
+//           v_org_id,
+//           v_horas_previstas,
+//           v_horas_previstas,
+//           v_horas_realizadas,
 //           v_saldo
 //       )
-//       ON CONFLICT (colaborador_id, data_inicio_semana) 
-//       DO UPDATE SET 
+//       ON CONFLICT (colaborador_id, data_inicio_semana)
+//       DO UPDATE SET
 //           horas_semana = EXCLUDED.horas_previstas,
 //           horas_previstas = EXCLUDED.horas_previstas,
 //           horas_realizadas = EXCLUDED.horas_realizadas,
 //           saldo_horas = EXCLUDED.saldo_horas;
-//   
+//
 //       IF TG_OP = 'DELETE' THEN
 //           RETURN OLD;
 //       END IF;
 //       RETURN NEW;
 //   END;
 //   $function$
-//   
+//
 // FUNCTION auto_assign_org_id()
 //   CREATE OR REPLACE FUNCTION public.auto_assign_org_id()
 //    RETURNS trigger
@@ -1540,7 +1539,7 @@ export const Constants = {
 //       RETURN NEW;
 //   END;
 //   $function$
-//   
+//
 // FUNCTION get_dashboard_kpi(date)
 //   CREATE OR REPLACE FUNCTION public.get_dashboard_kpi(p_date_now date)
 //    RETURNS json
@@ -1561,36 +1560,36 @@ export const Constants = {
 //     v_end_month := (date_trunc('month', p_date_now) + interval '1 month' - interval '1 day')::date;
 //     v_start_last_month := date_trunc('month', p_date_now - interval '1 month');
 //     v_end_last_month := (date_trunc('month', p_date_now) - interval '1 day')::date;
-//   
+//
 //     -- Calculate Total Balance (All time based on visibility)
 //     SELECT COALESCE(SUM(CASE WHEN type = 'Receita' THEN amount ELSE -amount END), 0)
 //     INTO v_total_balance
 //     FROM public.transactions;
-//   
+//
 //     -- Calculate Month Income
 //     SELECT COALESCE(SUM(amount), 0)
 //     INTO v_month_income
 //     FROM public.transactions
 //     WHERE type = 'Receita' AND date >= v_start_month AND date <= v_end_month;
-//   
+//
 //     -- Calculate Month Expense
 //     SELECT COALESCE(SUM(amount), 0)
 //     INTO v_month_expense
 //     FROM public.transactions
 //     WHERE type = 'Despesa' AND date >= v_start_month AND date <= v_end_month;
-//   
+//
 //     -- Calculate Last Month Income
 //     SELECT COALESCE(SUM(amount), 0)
 //     INTO v_last_month_income
 //     FROM public.transactions
 //     WHERE type = 'Receita' AND date >= v_start_last_month AND date <= v_end_last_month;
-//   
+//
 //     -- Calculate Last Month Expense
 //     SELECT COALESCE(SUM(amount), 0)
 //     INTO v_last_month_expense
 //     FROM public.transactions
 //     WHERE type = 'Despesa' AND date >= v_start_last_month AND date <= v_end_last_month;
-//   
+//
 //     RETURN json_build_object(
 //       'totalBalance', v_total_balance,
 //       'monthIncome', v_month_income,
@@ -1600,7 +1599,7 @@ export const Constants = {
 //     );
 //   END;
 //   $function$
-//   
+//
 // FUNCTION get_latest_transaction_id()
 //   CREATE OR REPLACE FUNCTION public.get_latest_transaction_id()
 //    RETURNS uuid
@@ -1613,7 +1612,7 @@ export const Constants = {
 //     RETURN (SELECT id FROM public.transactions ORDER BY created_at DESC, id DESC LIMIT 1);
 //   END;
 //   $function$
-//   
+//
 // FUNCTION get_my_org_id()
 //   CREATE OR REPLACE FUNCTION public.get_my_org_id()
 //    RETURNS uuid
@@ -1629,7 +1628,7 @@ export const Constants = {
 //     RETURN NULL;
 //   END;
 //   $function$
-//   
+//
 // FUNCTION get_user_role()
 //   CREATE OR REPLACE FUNCTION public.get_user_role()
 //    RETURNS text
@@ -1641,7 +1640,7 @@ export const Constants = {
 //     RETURN (SELECT role FROM public.profiles WHERE id = auth.uid());
 //   END;
 //   $function$
-//   
+//
 // FUNCTION handle_new_user()
 //   CREATE OR REPLACE FUNCTION public.handle_new_user()
 //    RETURNS trigger
@@ -1659,7 +1658,7 @@ export const Constants = {
 //     RETURN new;
 //   END;
 //   $function$
-//   
+//
 // FUNCTION is_admin()
 //   CREATE OR REPLACE FUNCTION public.is_admin()
 //    RETURNS boolean
@@ -1673,7 +1672,7 @@ export const Constants = {
 //     );
 //   END;
 //   $function$
-//   
+//
 // FUNCTION tr_ponto_atualiza_escala_semanal()
 //   CREATE OR REPLACE FUNCTION public.tr_ponto_atualiza_escala_semanal()
 //    RETURNS trigger
@@ -1695,10 +1694,10 @@ export const Constants = {
 //           v_data_inicio_semana := date_trunc('week', NEW.data)::date;
 //           v_org_id := NEW.organization_id;
 //       END IF;
-//   
+//
 //       SELECT COALESCE(SUM(
-//           CASE 
-//               WHEN tp.id IS NOT NULL AND tp.conta_hora = true THEN tp.carga_horaria 
+//           CASE
+//               WHEN tp.id IS NOT NULL AND tp.conta_hora = true THEN tp.carga_horaria
 //               WHEN tp.id IS NULL AND UPPER(e.tipo) NOT IN ('FOLGA', 'FERIAS', 'FÉRIAS', 'ATESTADO', 'FERIADO', 'JUSTIFICADA', '0') THEN 8 -- fallback
 //               ELSE 0
 //           END
@@ -1709,13 +1708,13 @@ export const Constants = {
 //       WHERE e.colaborador_id = v_colaborador_id
 //         AND e.data >= v_data_inicio_semana
 //         AND e.data < v_data_inicio_semana + INTERVAL '7 days';
-//   
+//
 //       SELECT COALESCE(SUM(
 //           EXTRACT(EPOCH FROM (
-//               CASE 
-//                   WHEN hora_saida IS NOT NULL AND hora_entrada IS NOT NULL 
-//                   THEN hora_saida::time - hora_entrada::time 
-//                   ELSE '00:00'::time - '00:00'::time 
+//               CASE
+//                   WHEN hora_saida IS NOT NULL AND hora_entrada IS NOT NULL
+//                   THEN hora_saida::time - hora_entrada::time
+//                   ELSE '00:00'::time - '00:00'::time
 //               END
 //           ))/3600
 //       ), 0)
@@ -1724,27 +1723,27 @@ export const Constants = {
 //       WHERE p.colaborador_id = v_colaborador_id
 //         AND p.data >= v_data_inicio_semana
 //         AND p.data < v_data_inicio_semana + INTERVAL '7 days';
-//   
+//
 //       INSERT INTO public.escalas_semanais (
-//           colaborador_id, data_inicio_semana, organization_id, 
+//           colaborador_id, data_inicio_semana, organization_id,
 //           horas_semana, horas_previstas, horas_realizadas, saldo_horas
 //       )
 //       VALUES (
-//           v_colaborador_id, v_data_inicio_semana, v_org_id, 
+//           v_colaborador_id, v_data_inicio_semana, v_org_id,
 //           v_horas_previstas, v_horas_previstas, v_horas_realizadas, v_horas_realizadas - v_horas_previstas
 //       )
-//       ON CONFLICT (colaborador_id, data_inicio_semana) 
-//       DO UPDATE SET 
+//       ON CONFLICT (colaborador_id, data_inicio_semana)
+//       DO UPDATE SET
 //           horas_semana = EXCLUDED.horas_previstas,
 //           horas_previstas = EXCLUDED.horas_previstas,
 //           horas_realizadas = EXCLUDED.horas_realizadas,
 //           saldo_horas = EXCLUDED.saldo_horas;
-//   
+//
 //       IF TG_OP = 'DELETE' THEN RETURN OLD; END IF;
 //       RETURN NEW;
 //   END;
 //   $function$
-//   
+//
 // FUNCTION valida_escala()
 //   CREATE OR REPLACE FUNCTION public.valida_escala()
 //    RETURNS trigger
@@ -1760,60 +1759,60 @@ export const Constants = {
 //       IF TG_OP = 'DELETE' THEN
 //           RETURN OLD;
 //       END IF;
-//   
+//
 //       -- Check colaborador status
-//       SELECT status_operacional, descanso_interjornada_horas 
+//       SELECT status_operacional, descanso_interjornada_horas
 //       INTO v_status_operacional, v_descanso_interjornada_horas
 //       FROM public.colaboradores
 //       WHERE id = NEW.colaborador_id;
-//   
+//
 //       IF v_status_operacional IN ('Desligado', 'Inativo') THEN
 //           RAISE EXCEPTION 'Colaborador indisponível para escala (Status: %)', v_status_operacional;
 //       END IF;
-//   
+//
 //       -- Check Férias
 //       SELECT EXISTS (
-//           SELECT 1 FROM public.ferias 
-//           WHERE colaborador_id = NEW.colaborador_id 
+//           SELECT 1 FROM public.ferias
+//           WHERE colaborador_id = NEW.colaborador_id
 //             AND status = 'Aprovada'
 //             AND NEW.data BETWEEN data_inicio AND data_fim
 //       ) INTO v_conflito_ferias;
-//   
+//
 //       IF v_conflito_ferias THEN
 //           RAISE EXCEPTION 'Colaborador está em férias no período';
 //       END IF;
-//   
+//
 //       -- Check Afastamentos
 //       SELECT EXISTS (
-//           SELECT 1 FROM public.afastamentos 
-//           WHERE colaborador_id = NEW.colaborador_id 
+//           SELECT 1 FROM public.afastamentos
+//           WHERE colaborador_id = NEW.colaborador_id
 //             AND status = 'Aprovado'
 //             AND NEW.data BETWEEN data_inicio AND data_fim
 //       ) INTO v_conflito_afastamento;
-//   
+//
 //       IF v_conflito_afastamento THEN
 //           RAISE EXCEPTION 'Colaborador está afastado no período';
 //       END IF;
-//   
+//
 //       -- Basic Interjornada check
 //       IF v_descanso_interjornada_horas IS NOT NULL AND v_descanso_interjornada_horas > 0 THEN
-//           SELECT e.*, tp.bloqueia_dia_seguinte, tp.carga_horaria 
+//           SELECT e.*, tp.bloqueia_dia_seguinte, tp.carga_horaria
 //           INTO v_escala_anterior
 //           FROM public.escalas e
 //           LEFT JOIN public.turnos_padrao tp ON UPPER(e.tipo) = UPPER(tp.codigo)
-//           WHERE e.colaborador_id = NEW.colaborador_id 
+//           WHERE e.colaborador_id = NEW.colaborador_id
 //             AND e.data = NEW.data - INTERVAL '1 day'
 //             AND tp.bloqueia_dia_seguinte = true;
-//   
+//
 //           IF FOUND AND UPPER(NEW.tipo) NOT IN ('FOLGA', 'FÉRIAS', 'FERIAS', 'ATESTADO', '0') THEN
 //                RAISE EXCEPTION 'Descanso obrigatório não cumprido. Colaborador teve turno que bloqueia o dia seguinte ontem.';
 //           END IF;
 //       END IF;
-//   
+//
 //       RETURN NEW;
 //   END;
 //   $function$
-//   
+//
 
 // --- TRIGGERS ---
 // Table: avaliacoes
@@ -1848,4 +1847,3 @@ export const Constants = {
 //   CREATE INDEX transactions_created_at_idx ON public.transactions USING btree (created_at DESC)
 // Table: turnos_padrao
 //   CREATE UNIQUE INDEX turnos_padrao_codigo_key ON public.turnos_padrao USING btree (codigo)
-
